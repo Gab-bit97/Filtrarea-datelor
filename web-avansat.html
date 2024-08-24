@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>Web Avansat</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div>
@@ -10,12 +11,23 @@
       <button id="adauga-local-storage">Adauga student</button>
       <button id="delete">Stergere</button>
     </div>
-    <div>
+    <br />
+    <div class="dropdown">
+      <button class="dropbtn">Ordonează</button>
+      <div class="dropdown-content">
+        <a href="#" id="nume-crescator">Nume Crescător</a>
+        <a href="#" id="nume-descrescator">Nume Descrescător</a>
+        <a href="#" id="nota-crescator">Notă Crescător</a>
+        <a href="#" id="nota-descrescator">Notă Descrescător</a>
+      </div>
+    </div>
+    <!-- <div>
       <button id="nume-crescator">Ordonare crescatoare</button>
       <button id="nume-descrescator">Ordonare descrescator</button>
       <button id="nota-crescator">Ordonare nota crescator</button>
       <button id="nota-descrescator">Orodnare nota descrescator</button>
-    </div>
+    </div> -->
+    <br />
     <div>
       <table id="tabel-studenti">
         <thead>

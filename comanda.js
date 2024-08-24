@@ -87,3 +87,21 @@ function createRow(item) {
   row.appendChild(valueCell);
   return row;
 }
+document.querySelector(".dropbtn").addEventListener("click", function () {
+  const dropdownContent = document.querySelector(".dropdown-content");
+  dropdownContent.style.display =
+    dropdownContent.style.display === "block" ? "none" : "block";
+});
+document.querySelectorAll(".dropdown-content a").forEach((link) => {
+  link.addEventListener("click", function (event) {
+    event.stopPropagation();
+  });
+});
+window.addEventListener("click", function (event) {
+  if (!event.target.matches(".dropbtn")) {
+    const dropdownContent = document.querySelector(".dropdown-content");
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    }
+  }
+});
